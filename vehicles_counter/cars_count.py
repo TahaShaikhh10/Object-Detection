@@ -4,12 +4,14 @@ import cvzone
 import math
 from sort import *
 
+# Export Video Source
 cap = cv2.VideoCapture("Videos/cars.mp4")
 
 # using  the YOLOv8 model
 model = YOLO("../Yolo-weights/Yolov8n.pt")
 
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 906)     # setting the video size 
+# These lines are used to set the video size 
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 906)     
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 344)
 
 
